@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZAS CHESTER</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body onload="calcular()">
+    <center>
+        <h1 class="h1 mb-3 fw-normal bg-warning text-white">PIZZAS CHESTER</h1>
+    <hr>
+
+<a name="tema1"></a>
+
+<main class="card p-4 w-25 m-auto mt-4">
+    <form class="text-center">
+    <h1 class="h3 mb-3 fw-normal bg-warning text-white">TAMAÑO</h1>
+
+    <div class="card mb-3" m-auto p-2>
+        <h2 class="bg-dark text-white">SELECCIONA  </h2>
+        <select id="tamaño" class="form-select" aria-label="Default select example">
+            <option value="1">INDIVIDUAL</option>
+            <option value="2">GRANDE</option>
+            <option value="3">FAMILIAR</option>
+            <option value="4">JUMBO</option>
+        </select>
+    </div>
+
+    <div class="card m-2" id="img">
+        <img src="pizza.png" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text">pizza</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card" m-auto p-2> 
+            <h2 class="bg-primary text-white">EXTRA</h2>
+    <table><input type="radio" class="form-check-input" name="p" id="p1" value="1"><b>REFRESCO 2L-$40</b><br>
+            <input type="radio" class="form-check-input" name="p" id="p2" value="2"><b>PAPAS-$50</b><br>
+            <input type="radio" class="form-check-input" name="p" id="p3" value="3"><b>ALITAS-$75</b><br></table>
+            </div> 
+</div>
+
+    <div class="card m-3" m-auto p-2>
+        <h4 class="bg-primary text-white">CANTIDAD</h4>
+        CANTIDAD:<input type="range" class="form-range" id="cantidad" value="1" min="1" max="10"><span id="vcantidad">1</span>
+    </div>
+    <h4 class="bg-primary text-white">INGREDIENTES</h4>
+    <input type="radio" class="form-check-input" name="i" id="uno" value="1"><b>uno</b><br>
+    <input type="radio" class="form-check-input" name="i" id="dos" value="1"><b>dos</b><br>
+    <input type="radio" class="form-check-input" name="i" id="tres" value="1"><b>tres</b><br>
+
+
+    <table class="table">
+    <thead>
+        <tr class="table table-dark">
+        <th scope="col" colspan="3">TOTAL</th>
+        </tr>
+        <tr>
+            <td colspan="3"><h1 id="res" style="color:rgb(135, 36, 146)">$</h1></td>
+        </tr>
+    </thead>
+</table>
+    <p class="mt-5 mb-3 text-body-secondary">&copy;CECYTEM 2023</p>
+    </form>
+</main>
+
+
+</main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
